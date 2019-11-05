@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Капин](https://up.htmlacademy.ru/adaptive/18/user/288739).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Двухжилов](https://htmlacademy.ru/profile/vdvukhzhilov).
 
 ---
 
