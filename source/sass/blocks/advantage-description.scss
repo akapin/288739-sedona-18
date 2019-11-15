@@ -1,0 +1,31 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.advantage-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  &__list {
+    @include list-reset();
+    padding: 20px 20px 20px 60px;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-family: "PT Sans Bold", "Arial", "sans-serif";
+    color: $black-four;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__text {
+    font-family: "PT Sans", "Arial", "sans-serif";
+    color: $black;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
