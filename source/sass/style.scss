@@ -1,22 +1,22 @@
-@import 'blocks/accordion.scss';
-@import 'blocks/advantage-description.scss';
-@import 'blocks/advantage-heading.scss';
-@import 'blocks/advantages.scss';
-@import 'blocks/copyright.scss';
-@import 'blocks/feedback-form.scss';
-@import 'blocks/find-us.scss';
-@import 'blocks/gallery.scss';
-@import 'blocks/main-nav.scss';
-@import 'blocks/page-footer.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/page-main.scss';
-@import 'blocks/player.scss';
-@import 'blocks/promo.scss';
-@import 'blocks/site-list.scss';
-@import 'blocks/social.scss';
-@import 'blocks/video.scss';
-@import 'mixins.scss';
-@import 'variables.scss';
+@import "blocks/accordion.scss";
+@import "blocks/advantage-description.scss";
+@import "blocks/advantage-heading.scss";
+@import "blocks/advantages.scss";
+@import "blocks/copyright.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/find-us.scss";
+@import "blocks/gallery.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/player.scss";
+@import "blocks/promo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/video.scss";
+@import "mixins.scss";
+@import "variables.scss";
 
 *,
 *::before,
@@ -31,6 +31,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+
+  text-transform: uppercase;
 }
 
 a {
@@ -41,13 +43,11 @@ a {
   display: block;
   padding: 18px;
 
-  font-family: "PT Sans Bold", "Arial", "sans-serif";
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   color: white;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
-
-  text-transform: uppercase;
 }
 
 .button--blue {
@@ -74,11 +74,11 @@ a {
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff") format("woff");
-  src: url("../fonts/ptsans.woff2") format("woff2"),
+  src: url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans Bold";
   src: url("../fonts/ptsansbold.woff") format("woff");
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
 }

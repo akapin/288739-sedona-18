@@ -1,15 +1,14 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .find-us {
-  text-transform: uppercase;
   text-align: center;
 
   &__title {
     margin: 0;
     padding: 20px 20px 10px 20px;
 
-    font-family: "PT Sans Bold", "Arial", "sans-serif";
-    color: $black-four;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    color: $black;
     font-size: 21px;
     line-height: 26px;
   }
@@ -18,8 +17,8 @@
     margin: 0;
     padding: 10px 20px 10px 20px;
 
-    font-family: "PT Sans", "Arial", "sans-serif";
-    color: $black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: $black-alt;
     font-size: 14px;
     line-height: 24px;
   }

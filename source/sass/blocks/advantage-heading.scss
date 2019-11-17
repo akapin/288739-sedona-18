@@ -1,12 +1,10 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .advantage-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 27px;
-
-  text-transform: uppercase;
 
   background-color: #efefef;
 
@@ -16,8 +14,8 @@
   }
 
   &__title {
-    font-family: "PT Sans Bold", "Arial", "sans-serif";
-    color: $black-four;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    color: $black;
     font-size: 18px;
     line-height: 26px;
 
@@ -27,8 +25,8 @@
   }
 
   &__text {
-    font-family: "PT Sans", "Arial", "sans-serif";
-    color: $black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: $black-alt;
     font-size: 14px;
     line-height: 21px;
     text-align: center;

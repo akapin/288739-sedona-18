@@ -1,5 +1,5 @@
-@import '../variables.scss';
-@import '../mixins.scss';
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .site-list {
   @include list-reset();
@@ -12,11 +12,9 @@
   }
 
   &__link {
-    font-family: "PT Sans Bold", "Arial", "sans-serif";
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     color: white;
     font-size: 18px;
     line-height: 21px;
-
-    text-transform: uppercase;
   }
 }
