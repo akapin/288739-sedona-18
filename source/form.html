@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" />
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -79,7 +79,7 @@
             </li>
             <li class="feedback-form__item">
               <label class="feedback-form__label" for="middle-name">
-                Отчество
+                Отчество:
               </label>
               <input
                 class="feedback-form__input"
@@ -94,8 +94,11 @@
         <fieldset class="feedback-form__group">
           <legend class="feedback-form__title">Контактная информация:</legend>
           <ul class="feedback-form__list">
-            <li class="feedback-form__item">
-              <label class="feedback-form__label" for="phone">
+            <li class="feedback-form__item feedback-form__item--contacts">
+              <label
+                class="feedback-form__label feedback-form__label--contacts"
+                for="phone"
+              >
                 Контактный телефон*:
               </label>
               <input
@@ -106,8 +109,11 @@
                 placeholder="Введите телефон"
               />
             </li>
-            <li class="feedback-form__item">
-              <label class="feedback-form__label" for="email">
+            <li class="feedback-form__item feedback-form__item--contacts">
+              <label
+                class="feedback-form__label feedback-form__label--contacts"
+                for="email"
+              >
                 Электронная почта*:
               </label>
               <input
@@ -131,7 +137,10 @@
                 name="positive-impression"
                 checked
               />
-              <label class="feedback-form__label" for="positive-impression">
+              <label
+                class="feedback-form__label feedback-form__label--radio"
+                for="positive-impression"
+              >
                 Скорее положительное
               </label>
             </li>
@@ -142,7 +151,10 @@
                 id="negative-impression"
                 name="negative-impression"
               />
-              <label class="feedback-form__label" for="negative-impression">
+              <label
+                class="feedback-form__label feedback-form__label--radio"
+                for="negative-impression"
+              >
                 Скорее отрицательное
               </label>
             </li>
@@ -153,7 +165,10 @@
                 id="neutral-impression"
                 name="neutral-impression"
               />
-              <label class="feedback-form__label" for="neutral-impression">
+              <label
+                class="feedback-form__label feedback-form__label--radio"
+                for="neutral-impression"
+              >
                 Затрудняюсь ответить
               </label>
             </li>
@@ -172,7 +187,10 @@
                 name="devil-bridge"
                 checked
               />
-              <label class="feedback-form__label" for="devil-bridge">
+              <label
+                class="feedback-form__label feedback-form__label--checkbox"
+                for="devil-bridge"
+              >
                 Мост Дьявола
               </label>
             </li>
@@ -184,7 +202,10 @@
                 name="bell-mountain"
                 checked
               />
-              <label class="feedback-form__label" for="bell-mountain">
+              <label
+                class="feedback-form__label feedback-form__label--checkbox"
+                for="bell-mountain"
+              >
                 Гора-Колокол
               </label>
             </li>
@@ -196,7 +217,10 @@
                 name="slide-park"
                 checked
               />
-              <label class="feedback-form__label" for="slide-park">
+              <label
+                class="feedback-form__label feedback-form__label--checkbox"
+                for="slide-park"
+              >
                 Слайд-парк
               </label>
             </li>
@@ -207,7 +231,10 @@
                 id="red-rocks"
                 name="red-rocks"
               />
-              <label class="feedback-form__label" for="red-rocks">
+              <label
+                class="feedback-form__label feedback-form__label--checkbox"
+                for="red-rocks"
+              >
                 Красные скалы
               </label>
             </li>
@@ -223,7 +250,7 @@
             name="detailed-feedback"
           ></textarea>
         </fieldset>
-        <button class="button button--blue" type="submit">
+        <button class="button button--blue feedback-form__button" type="submit">
           Отправить отзыв
         </button>
       </form>
@@ -263,8 +290,12 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">
+            Разработано:
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
               HTML Academy
             </a>
           </p>

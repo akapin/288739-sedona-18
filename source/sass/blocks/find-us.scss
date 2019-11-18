@@ -1,11 +1,11 @@
 @import "../variables.scss";
 
 .find-us {
+  padding: 20px;
   text-align: center;
 
   &__title {
     margin: 0;
-    padding: 20px 20px 10px 20px;
 
     font-family: "PT Sans Bold", "Arial", sans-serif;
     color: $black;
@@ -14,8 +14,7 @@
   }
 
   &__description {
-    margin: 0;
-    padding: 10px 20px 10px 20px;
+    margin: 20px 0 20px 0;
 
     font-family: "PT Sans", "Arial", sans-serif;
     color: $black-alt;
@@ -24,6 +23,10 @@
   }
 
   &__button {
-    margin: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__map-image {
+    margin: 0 -20px;
   }
 }

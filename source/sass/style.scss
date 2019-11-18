@@ -42,12 +42,16 @@ a {
 .button {
   display: block;
   padding: 18px;
+  width: 100%;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: white;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  text-transform: uppercase;
+
+  border: 0;
 }
 
 .button--blue {
