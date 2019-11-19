@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+.advantage-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px;
+
+  background-color: #efefef;
+
+  &--active {
+    color: white;
+    background-color: $light-grey-blue;
+  }
+
+  &__title {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    color: $black;
+    font-size: 18px;
+    line-height: 26px;
+
+    &--active {
+      color: white;
+    }
+  }
+
+  &__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: $black-alt;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    &--active {
+      color: white;
+    }
+  }
+}

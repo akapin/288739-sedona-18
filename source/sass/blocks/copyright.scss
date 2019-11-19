@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+.copyright {
+  margin-top: 20px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $black;
+  font-size: 14px;
+  line-height: 26px;
+
+  &__text {
+    margin: 0;
+  }
+
+  &__link {
+    color: $black;
+  }
+}
