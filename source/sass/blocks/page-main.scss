@@ -1,5 +1,12 @@
 @import "../variables.scss";
 
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: white;
+}
+
 .page-main__title {
   margin: 0;
   padding: 20px 25px 10px 25px;
@@ -20,4 +27,16 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+  }
 }

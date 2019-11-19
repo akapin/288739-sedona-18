@@ -1,8 +1,46 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
 .main-nav {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+
+  background-color: white;
+}
+
+.main-nav__logo {
+  align-self: center;
+  height: 83px;
+  width: 102px;
+  margin-bottom: -27px;
 }
 
 .main-nav__toggle {
-  align-self: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 65px;
+  height: 56px;
+}
+
+.main-nav__list {
+  order: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo {
+    position: absolute;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
 }
