@@ -6,101 +6,101 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
 
-  &__group {
-    padding: 0;
-    width: 100%;
+.feedback-form__group {
+  padding: 0;
+  width: 100%;
 
-    border: 0;
+  border: 0;
+}
+
+.feedback-form__title {
+  padding: 20px;
+
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  color: $black;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.feedback-form__list {
+  @include list-reset();
+}
+
+.feedback-form__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &--contacts {
+    flex-direction: column;
+    align-items: start;
   }
+}
 
-  &__title {
-    padding: 20px;
+.feedback-form__label {
+  margin-right: 10px;
+  padding: 10px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $black-alt;
+  font-size: 14px;
+  line-height: 26px;
+
+  &--radio {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     color: $black;
     font-size: 18px;
-    line-height: 26px;
-    text-align: center;
+    text-transform: none;
   }
 
-  &__list {
-    @include list-reset();
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-
-    &--contacts {
-      flex-direction: column;
-      align-items: start;
-    }
-  }
-
-  &__label {
-    margin-right: 10px;
-    padding: 10px;
-
-    font-family: "PT Sans", "Arial", sans-serif;
-    color: $black-alt;
-    font-size: 14px;
-    line-height: 26px;
-
-    &--radio {
-      font-family: "PT Sans Bold", "Arial", sans-serif;
-      color: $black;
-      font-size: 18px;
-      text-transform: none;
-    }
-
-    &--checkbox {
-      font-family: "PT Sans Bold", "Arial", sans-serif;
-      color: $black;
-      font-size: 18px;
-      text-transform: none;
-    }
-  }
-
-  &__input {
-    padding: 15px;
-    width: 100%;
-
+  &--checkbox {
     font-family: "PT Sans Bold", "Arial", sans-serif;
     color: $black;
     font-size: 18px;
-    line-height: 26px;
-
-    background-color: #f2f2f2;
-    border: 0;
-
-    &::placeholder {
-      color: inherit;
-    }
+    text-transform: none;
   }
+}
 
-  &__textarea {
-    padding: 15px;
-    width: 100%;
-    min-height: 160px;
+.feedback-form__input {
+  padding: 15px;
+  width: 100%;
 
-    font-family: "PT Sans Bold", "Arial", sans-serif;
-    color: $black;
-    font-size: 18px;
-    line-height: 26px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  color: $black;
+  font-size: 18px;
+  line-height: 26px;
 
-    background-color: #f2f2f2;
-    border: 0;
-    resize: none;
+  background-color: #f2f2f2;
+  border: 0;
 
-    &::placeholder {
-      color: inherit;
-    }
+  &::placeholder {
+    color: inherit;
   }
+}
 
-  &__button {
-    margin-top: 40px;
+.feedback-form__textarea {
+  padding: 15px;
+  width: 100%;
+  min-height: 160px;
+
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  color: $black;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: #f2f2f2;
+  border: 0;
+  resize: none;
+
+  &::placeholder {
+    color: inherit;
   }
+}
+
+.feedback-form__button {
+  margin-top: 40px;
 }

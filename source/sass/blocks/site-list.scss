@@ -3,18 +3,18 @@
 
 .site-list {
   @include list-reset();
+}
 
-  &__item {
-    padding: 21px 20px 20px 20px;
+.site-list__item {
+  padding: 21px 20px 20px 20px;
 
-    text-align: center;
-    background-color: $light-grey-blue;
-  }
+  text-align: center;
+  background-color: $light-grey-blue;
+}
 
-  &__link {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
-    color: white;
-    font-size: 18px;
-    line-height: 21px;
-  }
+.site-list__link {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  color: white;
+  font-size: 18px;
+  line-height: 21px;
 }

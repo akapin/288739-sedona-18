@@ -1,8 +1,8 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+}
 
-  &__toggle {
-    align-self: center;
-  }
+.main-nav__toggle {
+  align-self: center;
 }
