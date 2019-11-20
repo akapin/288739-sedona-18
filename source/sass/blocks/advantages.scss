@@ -1,11 +1,21 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.advantages {
+  width: 100%;
+}
+
 .advantages__list {
   @include list-reset();
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__text {
@@ -29,7 +39,17 @@
   }
 }
 
+.advantages__image {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .advantages__text {
     width: 610px;
 
@@ -40,8 +60,9 @@
   }
 
   .advantages__item {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
     flex-basis: 256px;
     min-height: 256px;
 

@@ -1,14 +1,8 @@
 .page-header {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 
   background-color: white;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    width: 768px;
-  }
 }
 
 @media (min-width: $desktop-width) {
