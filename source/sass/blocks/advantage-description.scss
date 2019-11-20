@@ -38,9 +38,8 @@
   }
 
   .advantage-description__item {
-    display: flex;
     flex-direction: column;
-    flex-basis: 256px;
+    width: 256px;
     align-items: center;
     padding: 46px;
 
@@ -62,6 +61,6 @@
   }
 
   .advantage-description__item {
-    flex-basis: 400px;
+    width: 400px;
   }
 }
