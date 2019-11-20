@@ -21,3 +21,21 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 68px 60px 40px 60px;
+  }
+
+  .video__wrapper {
+    margin: 0 auto;
+    margin-bottom: 78px;
+    width: 470px;
+  }
+
+  .video__description {
+    &--bold {
+      font-size: 30px;
+    }
+  }
+}
