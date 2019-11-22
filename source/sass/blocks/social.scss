@@ -3,30 +3,30 @@
 
 .social {
   width: 170px;
+}
 
-  &__list {
-    @include list-reset();
+.social__list {
+  @include list-reset();
 
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px 10px 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
-  &__item {
-    width: 46px;
-    height: 48px;
-  }
+.social__item {
+  width: 46px;
+  height: 48px;
+}
 
-  &__link {
-    display: flex;
-    width: 100%;
-    height: 100%;
+.social__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
 
-    font-family: "PT Sans Bold", "Arial", sans-serif;
-    color: white;
-    font-size: 21px;
-    line-height: 26px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
 
-    background-color: $light-grey-blue;
-  }
+  background-color: $light-grey-blue;
 }
