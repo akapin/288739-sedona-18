@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no" />
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
@@ -43,18 +43,20 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Оставьте свой отзыв</h1>
-      <p class="page-main__description">
-        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
-        посещенных вами достопримечательностях
-      </p>
+      <header class="page-main__header">
+        <h1 class="page-main__title">Оставьте свой отзыв</h1>
+        <p class="page-main__description">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+      </header>
       <form
         class="page-main__feedback-form feedback-form"
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">Представьтесь:</legend>
+        <fieldset class="feedback-form__group feedback-form__group--introduction">
+          <legend class="feedback-form__title feedback-form__title--introduction">Представьтесь:</legend>
           <ul class="feedback-form__list">
             <li class="feedback-form__item">
               <label class="feedback-form__label" for="name">Имя*:</label>
@@ -94,16 +96,16 @@
         </fieldset>
         <fieldset class="feedback-form__group">
           <legend class="feedback-form__title">Контактная информация:</legend>
-          <ul class="feedback-form__list">
+          <ul class="feedback-form__list feedback-form__list--contacts">
             <li class="feedback-form__item feedback-form__item--contacts">
               <label
                 class="feedback-form__label feedback-form__label--contacts"
                 for="phone"
               >
-                Контактный телефон*:
+                <span class="feedback-form__label-part">Контактный</span> телефон*:
               </label>
               <input
-                class="feedback-form__input"
+                class="feedback-form__input feedback-form__input--contacts"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -118,7 +120,7 @@
                 Электронная почта*:
               </label>
               <input
-                class="feedback-form__input"
+                class="feedback-form__input feedback-form__input--contacts"
                 type="email"
                 id="email"
                 name="email"
@@ -127,8 +129,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+        <fieldset class="feedback-form__group feedback-form__group--impression">
+          <legend class="feedback-form__title feedback-form__title--impression">Ваше общее впечатление:</legend>
           <ul class="feedback-form__list">
             <li class="feedback-form__item">
               <input
@@ -179,8 +181,8 @@
           <legend class="feedback-form__title">
             Посещенные достопримечательности:
           </legend>
-          <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+          <ul class="feedback-form__list feedback-form__list--landmarks">
+            <li class="feedback-form__item feedback-form__item--landmarks">
               <input
                 class="feedback-form__checkbox"
                 type="checkbox"
@@ -195,7 +197,7 @@
                 Мост Дьявола
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--landmarks">
               <input
                 class="feedback-form__checkbox"
                 type="checkbox"
@@ -210,7 +212,7 @@
                 Гора-Колокол
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--landmarks">
               <input
                 class="feedback-form__checkbox"
                 type="checkbox"
@@ -225,7 +227,7 @@
                 Слайд-парк
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--landmarks">
               <input
                 class="feedback-form__checkbox"
                 type="checkbox"
@@ -254,6 +256,7 @@
         <button class="button button--blue feedback-form__button" type="submit">
           Отправить отзыв
         </button>
+        <p class="feedback-form__notes">* — обязательные поля</p>
       </form>
     </main>
 

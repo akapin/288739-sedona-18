@@ -39,7 +39,7 @@
 
   .advantage-description__item {
     flex-direction: column;
-    width: 256px;
+    flex-basis: 256px;
     align-items: center;
     padding: 46px;
 
@@ -61,6 +61,6 @@
   }
 
   .advantage-description__item {
-    width: 400px;
+    flex-basis: 400px;
   }
 }
