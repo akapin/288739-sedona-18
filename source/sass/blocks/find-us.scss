@@ -7,12 +7,16 @@
 }
 
 .find-us__wrapper {
-  padding: 20px;
+  margin: 0 auto;
+  padding: 28px 20px 49px;
+
   text-align: center;
 }
 
 .find-us__description {
-  margin: 20px 0 20px 0;
+  margin: 0;
+  margin-bottom: 35px;
+  width: 100%;
 
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;
@@ -21,6 +25,8 @@
 
   &--bold {
     margin: 0;
+    margin-bottom: 19px;
+    width: 100%;
 
     font-family: "PT Sans Bold", "Arial", sans-serif;
     color: $black;
@@ -29,20 +35,45 @@
   }
 }
 
-.find-us__button {
-  margin-bottom: 40px;
+.find-us__description {
+  width: 100%;
+}
+
+.find-us__description br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .find-us__wrapper {
-    padding: 0;
-    margin-top: 50px;
+    padding: 55px 0 58px;
     width: 458px;
+
+    text-align: center;
   }
 
   .find-us__description {
+    margin-bottom: 42px;
+
     &--bold {
       font-size: 30px;
+      margin-bottom: 31px;
     }
+  }
+
+  .find-us__description br {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-us__wrapper {
+    padding: 55px 0 66px;
+    width: 458px;
+
+    text-align: center;
+  }
+
+  .find-us__description {
+    margin-bottom: 47px;
   }
 }

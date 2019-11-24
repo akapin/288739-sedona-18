@@ -1,6 +1,10 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.gallery {
+  width: 100%;
+}
+
 .gallery__list {
   @include list-reset();
 
