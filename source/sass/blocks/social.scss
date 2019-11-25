@@ -20,6 +20,8 @@
 
 .social__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 
@@ -29,4 +31,21 @@
   line-height: 26px;
 
   background-color: $light-grey-blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .social__image {
+    opacity: 0.3;
+  }
+}
+
+.social__image {
+  fill: #ffffff;
+
 }

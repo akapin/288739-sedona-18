@@ -12,6 +12,18 @@
   text-align: center;
   background-color: $light-grey-blue;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .site-list__link {
+    opacity: 0.3;
+  }
 }
 
 .site-list__link {
@@ -41,7 +53,7 @@
     padding: 0;
     min-width: 153px;
 
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: none;
 
     &:nth-child(2) {
@@ -51,14 +63,34 @@
     &:nth-child(3) {
       margin-left: 10%;
     }
+
+    &:hover {
+      background-color: inherit;
+    }
+  
+    &:active {
+      background-color: inherit;
+    }
   }
 
   .site-list__link {
     padding: 15px;
 
-    color: black;
+    color: $black;
     font-size: 14px;
     line-height: 26px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+    }
   }
 
   &--last {

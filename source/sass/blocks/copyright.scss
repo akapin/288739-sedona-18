@@ -10,9 +10,28 @@
 }
 
 .copyright__text {
+  display: flex;
+  align-items: center;
   margin: 0;
 }
 
 .copyright__link {
+  display: flex;
+  margin-left: 4px;
+
   color: $black;
+}
+
+.copyright__image {
+  path {
+    fill: $black;
+  }
+
+  &:hover path {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

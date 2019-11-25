@@ -28,22 +28,30 @@
 
 .page-footer__copyright {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 26px 60px;
+    align-items: flex-start;
+    min-height: 120px;
+    padding: 19px 53px 19px 60px;
   }
 
   .page-footer__contacts {
     margin: 0;
+    margin-top: 20px;
+  }
+
+  .page-footer__social {
+    margin-right: 10px;
   }
 
   .page-footer__copyright {
     margin: 0;
+    margin-top: 12px;
   }
 }
 
@@ -51,6 +59,10 @@
   .page-footer {
     width: 1200px;
     padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 113px;
+  }
+
+  .page-footer__social {
+    margin-right: 10px;
   }
 }

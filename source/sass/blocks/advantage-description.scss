@@ -36,10 +36,14 @@
   color: $black-alt;
   font-size: 14px;
   line-height: 21px;
-}
 
-.advantage-description__text br {
-  display: none;
+  &--food br {
+    display: none;
+  }
+
+  &--souvenirs br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,8 +71,10 @@
     }
   }
 
-  .advantage-description__text br {
-    display: inline;
+  .advantage-description__text {
+    &--food br {
+      display: inline;
+    }
   }
 
   .advantage-description__title {
@@ -86,5 +92,11 @@
     flex-basis: 400px;
     padding-top: 97px;
     padding-bottom: 21px;
+  }
+
+  .advantage-description__text {
+    &--souvenirs br {
+      display: inline;
+    }
   }
 }

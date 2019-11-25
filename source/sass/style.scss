@@ -61,12 +61,30 @@ a {
   text-align: center;
   text-transform: uppercase;
 
+  cursor: pointer;
   border: 0;
 }
 
 .button--blue {
-  color: white;
+  color: #ffffff;
   background-color: $light-grey-blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
 }
 
 .visually-hidden {

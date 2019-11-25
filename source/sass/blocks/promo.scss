@@ -8,9 +8,9 @@
   background-repeat: no-repeat;
 
   &--small {
-    min-height: 160px;
+    min-height: 158px;
     background-size: unset;
-    background-position: bottom;
+    background-position: bottom center;
   }
 }
 
@@ -20,7 +20,7 @@
     background-image: url("../../img/bg-back-tablet@1x.jpg");
 
     &--small {
-      min-height: 300px;
+      min-height: 290px;
       background-size: cover;
     }
   }
