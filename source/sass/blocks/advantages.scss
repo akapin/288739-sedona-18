@@ -1,12 +1,24 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.advantages {
+  width: 100%;
+}
+
 .advantages__list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 15px 32px 32px 32px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -16,12 +28,59 @@
   text-align: center;
 
   &--bold {
-    margin: 0;
+    margin: 0 auto;
     padding: 32px 32px 15px 32px;
 
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+  }
+}
+
+.advantages__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__text {
+    width: 610px;
+
+    &--bold {
+      width: 570px;
+      font-size: 21px;
+    }
+  }
+
+  .advantages__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 256px;
+    min-height: 256px;
+
+    &--active {
+      flex-basis: 100%;
+    }
+
+    &:nth-child(2) picture {
+      order: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    flex-basis: 400px;
+
+    &--active {
+      flex-basis: 100%;
+    }
   }
 }

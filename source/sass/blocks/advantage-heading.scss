@@ -3,8 +3,10 @@
 .advantage-heading {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
   align-items: center;
-  padding: 27px;
+  padding: 40px 22px;
 
   background-color: #efefef;
 
@@ -15,10 +17,14 @@
 }
 
 .advantage-heading__title {
+  margin: 0;
+  padding: 5px 0;
+
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: $black;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 
   &--active {
     color: white;
@@ -26,6 +32,9 @@
 }
 
 .advantage-heading__text {
+  margin: 0;
+  padding: 5px 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;
   font-size: 14px;
@@ -34,5 +43,32 @@
 
   &--active {
     color: white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-heading {
+    flex-basis: 256px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .advantage-heading__title {
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-heading {
+    flex-basis: 400px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .advantage-heading__title {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

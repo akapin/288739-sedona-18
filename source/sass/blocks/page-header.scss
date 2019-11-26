@@ -1,8 +1,12 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
+  width: auto;
+  margin: 0 auto;
+
+  background-color: white;
 }
 
-.page-header__logo {
-  align-self: center;
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }

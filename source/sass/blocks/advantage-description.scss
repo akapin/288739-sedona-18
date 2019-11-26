@@ -2,14 +2,16 @@
 @import "../mixins.scss";
 
 .advantage-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .advantage-description__list {
   @include list-reset();
-  padding: 20px 20px 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .advantage-description__title {
@@ -26,4 +28,39 @@
   color: $black-alt;
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-description__list {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .advantage-description__item {
+    flex-direction: column;
+    width: 256px;
+    align-items: center;
+    padding: 46px;
+
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+
+  .advantage-description__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-description__list {
+    min-height: 400px;
+  }
+
+  .advantage-description__item {
+    width: 400px;
+  }
 }
