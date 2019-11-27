@@ -15,8 +15,8 @@
     background-image: url("../../img/text-sedona.svg"),
       url("../../img/bg-intro-triangle-mobile.svg"),
       url("../../img/bg-back-mobile@1x.jpg");
-    background-size: unset;
-    background-position: bottom center;
+    background-size: 230px, 331px, 770px;
+    background-position: center 51px, bottom, bottom center;
   }
 }
 
@@ -29,11 +29,15 @@
       url("../../img/bg-back-tablet@1x.jpg");
     background-size: 460px, contain, cover;
     background-position: center 77px, bottom, center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
 
     &--small {
       min-height: 290px;
-      background-size: cover;
+
+      background-image: url("../../img/text-sedona.svg"),
+        url("../../img/bg-intro-triangle-tablet.svg"),
+        url("../../img/bg-back-tablet@1x.jpg");
+      background-size: 460px, contain, cover;
+      background-position: center 94px, bottom, bottom center;
     }
   }
 }

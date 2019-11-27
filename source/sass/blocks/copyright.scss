@@ -4,7 +4,7 @@
   margin-top: 20px;
 
   font-family: "PT Sans", "Arial", sans-serif;
-  color: $black;
+  color: #000000;
   font-size: 14px;
   line-height: 26px;
 }
@@ -19,12 +19,12 @@
   display: flex;
   margin-left: 4px;
 
-  color: $black;
+  color: #000000;
 }
 
 .copyright__image {
   path {
-    fill: $black;
+    fill: #000000;
   }
 
   &:hover path {
