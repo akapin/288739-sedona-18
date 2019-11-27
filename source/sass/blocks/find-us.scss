@@ -35,10 +35,6 @@
   }
 }
 
-.find-us__description {
-  width: 100%;
-}
-
 .find-us__description br {
   display: none;
 }
@@ -75,5 +71,10 @@
 
   .find-us__description {
     margin-bottom: 47px;
+
+    &--bold {
+      font-size: 30px;
+      margin-bottom: 31px;
+    }
   }
 }
