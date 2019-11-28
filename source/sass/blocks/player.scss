@@ -54,6 +54,7 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &--replay {
     top: 66px;
@@ -66,6 +67,17 @@
 
   &--fullscreen {
     right: 8%;
+  }
+
+  &:hover path,
+  &:hover polygon {
+    fill: #333333;
+  }
+
+  &:active path,
+  &:active polygon {
+    fill: #333333;
+    opacity: 0.3;
   }
 }
 
@@ -102,6 +114,18 @@
     &--fullscreen {
       margin-top: 1px;
       margin-right: 6px;
+    }
+
+    &:hover path,
+    &:hover polygon {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active path,
+    &:active polygon {
+      fill: #ffffff;
+      opacity: 0.3;
     }
   }
 
