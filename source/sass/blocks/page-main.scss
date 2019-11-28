@@ -11,8 +11,14 @@
 }
 
 .page-main__header {
-  padding: 38px 24px 27px 24px;
+  padding: 38px 24px 27px;
   width: 100%;
+
+  &--form {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 18px;
+  }
 }
 
 .page-main__title {

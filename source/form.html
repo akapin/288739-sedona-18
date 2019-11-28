@@ -53,7 +53,7 @@
     </header>
 
     <main class="page-main">
-      <header class="page-main__header">
+      <header class="page-main__header page-main__header--form">
         <h1 class="page-main__title">Оставьте свой отзыв</h1>
         <p class="page-main__description">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
@@ -110,7 +110,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--contacts">
           <legend class="feedback-form__title">Контактная информация:</legend>
           <ul class="feedback-form__list feedback-form__list--contacts">
             <li class="feedback-form__item feedback-form__item--contacts">
@@ -121,13 +121,18 @@
                 <span class="feedback-form__label-part">Контактный</span>
                 телефон*:
               </label>
-              <input
-                class="feedback-form__input feedback-form__input--contacts"
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Введите телефон"
-              />
+              <div class="feedback-form__input-group">
+                <input
+                  class="feedback-form__input feedback-form__input--contacts"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Введите телефон"
+                />
+                <div
+                  class="feedback-form__icon feedback-form__icon--phone"
+                ></div>
+              </div>
             </li>
             <li class="feedback-form__item feedback-form__item--contacts">
               <label
@@ -136,13 +141,18 @@
               >
                 Электронная почта*:
               </label>
-              <input
-                class="feedback-form__input feedback-form__input--contacts"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Введите e-mail"
-              />
+              <div class="feedback-form__input-group">
+                <input
+                  class="feedback-form__input feedback-form__input--contacts"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Введите e-mail"
+                />
+                <div
+                  class="feedback-form__icon feedback-form__icon--email"
+                ></div>
+              </div>
             </li>
           </ul>
         </fieldset>
