@@ -1,6 +1,5 @@
 .player {
   position: relative;
-  margin-left: -1px;
 }
 
 .player__image {
@@ -113,5 +112,25 @@
 
   .player__bottom-bar {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .player__controls {
+    bottom: 0;
+  }
+
+  .player__seeking-line {
+    width: 74%;
+
+    &::before {
+      left: 21%;
+    }
+  }
+
+  .player__button {
+    &--fullscreen {
+      margin-right: 7px;
+    }
   }
 }

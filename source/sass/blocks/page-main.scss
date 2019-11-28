@@ -12,10 +12,11 @@
 
 .page-main__header {
   padding: 38px 24px 27px 24px;
+  width: 100%;
 }
 
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 26px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -26,7 +27,7 @@
 }
 
 .page-main__description {
-  margin: 0;
+  margin: 0 auto;
 
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;
@@ -57,5 +58,10 @@
 @media (min-width: $desktop-width) {
   .page-main {
     width: 1200px;
+  }
+
+  .page-main__header {
+    padding-top: 112px;
+    padding-bottom: 71px;
   }
 }

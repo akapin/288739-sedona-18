@@ -69,6 +69,14 @@
   object-fit: cover;
 }
 
+.advantages__heading {
+  margin: 0 auto;
+}
+
+.advantages__description {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__intro {
     padding-top: 50px;
