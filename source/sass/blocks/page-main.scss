@@ -45,6 +45,10 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     padding: 75px 0 69px;
+
+    &--form {
+      padding-bottom: 57px;
+    }
   }
 
   .page-main__title {

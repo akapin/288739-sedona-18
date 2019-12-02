@@ -73,8 +73,8 @@
           >
             Представьтесь:
           </legend>
-          <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+          <ul class="feedback-form__list feedback-form__list--introduction">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="name">Имя*:</label>
               <input
                 class="feedback-form__input"
@@ -84,7 +84,7 @@
                 value="Петр"
               />
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="surname">
                 Фамилия*:
               </label>
@@ -96,7 +96,7 @@
                 value="Иванов"
               />
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="middle-name">
                 Отчество:
               </label>
@@ -111,7 +111,9 @@
           </ul>
         </fieldset>
         <fieldset class="feedback-form__group feedback-form__group--contacts">
-          <legend class="feedback-form__title">Контактная информация:</legend>
+          <legend class="feedback-form__title feedback-form__title--contacts">
+            Контактная информация:
+          </legend>
           <ul class="feedback-form__list feedback-form__list--contacts">
             <li class="feedback-form__item feedback-form__item--contacts">
               <label
@@ -160,13 +162,13 @@
           <legend class="feedback-form__title feedback-form__title--impression">
             Ваше общее впечатление:
           </legend>
-          <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+          <ul class="feedback-form__list feedback-form__list--impression">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="positive-impression"
-                name="positive-impression"
+                name="impression"
                 checked
               />
               <label
@@ -176,12 +178,12 @@
                 Скорее положительное
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="negative-impression"
-                name="negative-impression"
+                name="impression"
               />
               <label
                 class="feedback-form__label feedback-form__label--radio"
@@ -190,12 +192,12 @@
                 Скорее отрицательное
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="neutral-impression"
-                name="neutral-impression"
+                name="impression"
               />
               <label
                 class="feedback-form__label feedback-form__label--radio"
@@ -206,14 +208,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">
+        <fieldset class="feedback-form__group feedback-form__group--landmarks">
+          <legend class="feedback-form__title feedback-form__title--landmarks">
             Посещенные достопримечательности:
           </legend>
           <ul class="feedback-form__list feedback-form__list--landmarks">
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="devil-bridge"
                 name="devil-bridge"
@@ -228,7 +230,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="bell-mountain"
                 name="bell-mountain"
@@ -243,7 +245,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="slide-park"
                 name="slide-park"
@@ -258,7 +260,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="red-rocks"
                 name="red-rocks"
@@ -272,8 +274,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">
+        <fieldset class="feedback-form__group feedback-form__group--textarea">
+          <legend class="feedback-form__title feedback-form__title--textarea">
             Опишите свои эмоции:
           </legend>
           <textarea
@@ -285,7 +287,7 @@
         <button class="button button--blue feedback-form__button" type="submit">
           Отправить отзыв
         </button>
-        <p class="feedback-form__notes">* — обязательные поля</p>
+        <p class="feedback-form__notes">* – обязательные поля</p>
       </form>
     </main>
 
