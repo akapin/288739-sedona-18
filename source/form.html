@@ -407,6 +407,35 @@
       </div>
     </footer>
 
+    <section class="page-modal page-modal--success">
+      <h2 class="visually-hidden">Окно подтверждения отправки отзыва</h2>
+      <div class="page-modal__wrapper">
+        <p class="page-modal__title">Ваш отзыв отправлен!</p>
+        <p class="page-modal__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br />
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+
+      <button class="button button--blue page-modal__button" type="button">
+        Закрыть окно
+      </button>
+    </section>
+
+    <section class="page-modal page-modal--failure">
+      <h2 class="visually-hidden">Окно ошибки отправки отзыва</h2>
+      <p class="page-modal__title page-modal__title--failure">Что-то пошло не так!</p>
+      <p class="page-modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button
+        class="button button--blue page-modal__button page-modal__button--failure"
+        type="button"
+      >
+        OK
+      </button>
+    </section>
+
     <script>
       var navMain = document.querySelector(".main-nav");
       var navToggle = document.querySelector(".main-nav__toggle");
