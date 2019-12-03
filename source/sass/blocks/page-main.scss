@@ -73,5 +73,9 @@
   .page-main__header {
     padding-top: 112px;
     padding-bottom: 71px;
+
+    &--form {
+      padding-bottom: 42px;
+    }
   }
 }

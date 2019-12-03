@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 44px;
+  padding: 0 0 44px;
   width: 100%;
 }
 
@@ -314,15 +314,6 @@
       height: 0;
     }
 
-    &--impression {
-      order: -1;
-      flex-basis: 324px;
-      min-height: 310px;
-      padding-bottom: 0;
-
-      border-right: 1px solid #dbdbdb;
-    }
-
     &--introduction {
       flex-basis: 324px;
       min-height: 310px;
@@ -333,7 +324,17 @@
     &--contacts {
       margin-top: 32px;
       padding-bottom: 13px;
+
       border-top: 1px solid #dbdbdb;
+    }
+
+    &--impression {
+      order: -1;
+      flex-basis: 324px;
+      min-height: 310px;
+      padding-bottom: 0;
+
+      border-right: 1px solid #dbdbdb;
     }
 
     &--landmarks {
@@ -343,6 +344,7 @@
     &--textarea {
       padding: 0;
       margin-bottom: 58px;
+
       border-top: 1px solid #dbdbdb;
     }
   }
@@ -454,39 +456,79 @@
 
 @media (min-width: $desktop-width) {
   .feedback-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 120px 61px;
+    padding: 0 120px 73px;
+  }
+
+  .feedback-form__group {
+    &--introduction {
+      padding-left: 79px;
+    }
+
+    &--contacts {
+      margin-top: 30px;
+    }
+
+    &--impression {
+      padding-left: 5px;
+    }
+  }
+
+  .feedback-form__title {
+    &--impression {
+      padding-left: 75px;
+    }
   }
 
   .feedback-form__list {
+    &--landmarks {
+      flex-basis: 100%;
+      justify-content: space-between;
+      padding-right: 4px;
+    }
+
     &--contacts {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    }
-
-    &--landmarks {
-      flex-basis: 100%;
+      margin-top: 50px;
     }
   }
 
   .feedback-form__item {
     &--contacts {
-      display: flex;
       flex-direction: row;
-      flex-grow: 1;
+      flex-grow: 0;
       align-items: center;
+
+      &:first-child {
+        flex-basis: 400px;
+      }
+
+      &:last-child {
+        flex-basis: 481px;
+      }
     }
 
     &--landmarks {
-      flex-grow: 1;
+      flex-basis: auto;
     }
   }
 
-  .feedback-form__input {
+  .feedback-form__input-group {
+    flex-grow: 1;
+  }
+
+  .feedback-form__label {
     &--contacts {
-      flex-basis: 257px;
+      padding-right: 18px;
+      margin: 0;
+
+      white-space: nowrap;
+    }
+
+    &--checkbox {
+      padding-top: 13px;
+      padding-right: 0;
     }
   }
 
