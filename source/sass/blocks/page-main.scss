@@ -11,13 +11,12 @@
 }
 
 .page-main__header {
-  padding: 33px 0;
+  padding: 33px 24px;
 }
 
 .page-main__title {
   margin: 0;
   margin-bottom: 25px;
-  padding: 0 10px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: $black;
@@ -28,7 +27,6 @@
 
 .page-main__description {
   margin: 0;
-  padding: 0 24px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;

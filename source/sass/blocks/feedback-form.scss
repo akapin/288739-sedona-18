@@ -5,11 +5,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .feedback-form__group {
+  flex-grow: 1;
   padding: 0;
+  margin: 0;
   width: 100%;
 
   border: 0;
@@ -17,6 +21,7 @@
 
 .feedback-form__title {
   padding: 20px;
+  margin: 0 auto;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: $black;
@@ -84,6 +89,7 @@
 
 .feedback-form__textarea {
   padding: 15px;
+  margin-bottom: 40px;
   width: 100%;
   min-height: 160px;
 
@@ -101,6 +107,118 @@
   }
 }
 
-.feedback-form__button {
-  margin-top: 40px;
+.feedback-form__notes {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px 61px;
+  }
+
+  .feedback-form__notes {
+    display: inline;
+  }
+
+  .feedback-form__group {
+    &--impression {
+      order: -1;
+      flex-basis: 324px;
+      min-height: 310px;
+    }
+
+    &--introduction {
+      flex-basis: 324px;
+      min-height: 310px;
+    }
+  }
+
+  .feedback-form__title {
+    font-size: 21px;
+
+    &--impression {
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      text-align: left;
+    }
+
+    &--introduction {
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      text-align: left;
+    }
+  }
+
+  .feedback-form__list {
+    &--landmarks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      flex-basis: 480px;
+    }
+  }
+
+  .feedback-form__item {
+    &--landmarks {
+      flex-basis: 230px;
+    }
+  }
+
+  .feedback-form__button {
+    flex-basis: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 120px 61px;
+  }
+
+  .feedback-form__list {
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--landmarks {
+      flex-basis: 100%;
+    }
+  }
+
+  .feedback-form__item {
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      align-items: center;
+    }
+
+    &--landmarks {
+      flex-grow: 1;
+    }
+  }
+
+  .feedback-form__input {
+    &--contacts {
+      flex-basis: 257px;
+    }
+  }
+
+  .feedback-form__label-part {
+    display: none;
+  }
+
+  .feedback-form__button {
+    flex-basis: 480px;
+  }
 }
