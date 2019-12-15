@@ -6,34 +6,60 @@
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  padding: 40px 22px;
+  padding-top: 27px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 88%;
 
-  background-color: #efefef;
+  border-bottom: 1px solid #d6d6d6;
 
   &--active {
-    color: white;
+    padding: 45px 25px 26px;
+    margin: 0;
+    width: auto;
+
+    color: #ffffff;
     background-color: $light-grey-blue;
+    border-bottom: 0;
+  }
+
+  &--bridge {
+    padding-top: 39px;
+    padding-bottom: 25px;
+  }
+
+  &--last {
+    padding-bottom: 13px;
   }
 }
 
 .advantage-heading__title {
   margin: 0;
-  padding: 5px 0;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
-  color: $black;
+  color: #000000;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 
   &--active {
-    color: white;
+    color: #ffffff;
   }
+}
+
+.advantage-heading__title br {
+  display: none;
 }
 
 .advantage-heading__text {
   margin: 0;
-  padding: 5px 0;
+  margin-bottom: 14px;
+  padding: 0;
+  width: 100%;
 
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;
@@ -42,33 +68,87 @@
   text-align: center;
 
   &--active {
-    color: white;
+    color: #ffffff;
   }
+
+  &--number {
+    position: relative;
+    width: auto;
+
+    &::before {
+      content: "–";
+      position: absolute;
+
+      left: -13px;
+      top: -1px;
+    }
+
+    &::after {
+      content: "–";
+      position: absolute;
+
+      right: -13px;
+      top: -1px;
+    }
+  }
+}
+
+.advantage-heading__text br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .advantage-heading {
+    justify-content: flex-start;
     flex-basis: 256px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 45px 45px 21px;
+
+    border-bottom: 0;
   }
 
   .advantage-heading__title {
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
     font-size: 21px;
+  }
+
+  .advantage-heading__title br {
+    display: inline;
+  }
+
+  .advantage-heading__text {
+    margin-bottom: 21px;
+
+    &--bridge br {
+      display: none;
+    }
+
+    &--road br {
+      display: inline;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-heading {
     flex-basis: 400px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 45px;
+    padding-left: 55px;
+    padding-right: 55px;
+
+    &--active {
+      padding-top: 52px;
+    }
   }
 
   .advantage-heading__title {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .advantage-heading__text {
+    &--bridge br {
+      display: inline;
+    }
   }
 }

@@ -1,18 +1,35 @@
 @import "../variables.scss";
 
 .copyright {
-  margin-top: 20px;
-
   font-family: "PT Sans", "Arial", sans-serif;
-  color: $black;
+  color: #000000;
   font-size: 14px;
   line-height: 26px;
 }
 
 .copyright__text {
+  display: flex;
+  align-items: center;
   margin: 0;
 }
 
 .copyright__link {
-  color: $black;
+  display: flex;
+  margin-left: 4px;
+
+  color: #000000;
+}
+
+.copyright__image {
+  path {
+    fill: #000000;
+  }
+
+  &:hover path {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

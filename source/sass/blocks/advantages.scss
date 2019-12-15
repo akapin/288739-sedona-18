@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.advantages__intro {
+  padding: 40px 25px 5px;
+}
+
 .advantages__list {
   @include list-reset();
 
@@ -15,11 +19,25 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
+
+  background-color: #efefef;
+
+  &:first-child .advantages__heading {
+    padding-top: 77px;
+
+    background-image: url("../../img/bg-triangle.svg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  &:last-child .advantages__heading {
+    border-bottom: 0;
+  }
 }
 
 .advantages__text {
   margin: 0 auto;
-  padding: 15px 32px 32px 32px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   color: $black-alt;
@@ -29,7 +47,7 @@
 
   &--bold {
     margin: 0 auto;
-    padding: 32px 32px 15px 32px;
+    margin-bottom: 27px;
 
     font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 18px;
@@ -38,12 +56,33 @@
   }
 }
 
+.advantages__item picture {
+  display: flex;
+  height: 100%;
+
+  background-color: #ffffff;
+}
+
 .advantages__image {
   display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.advantages__heading {
+  margin: 0 auto;
+}
+
+.advantages__description {
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .advantages__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,6 +92,8 @@
     width: 610px;
 
     &--bold {
+      margin-bottom: 28px;
+
       width: 570px;
       font-size: 21px;
     }
@@ -65,19 +106,33 @@
     flex-basis: 256px;
     min-height: 256px;
 
+    &:first-child .advantages__heading {
+      padding-top: 45px;
+
+      background-image: none;
+    }
+
     &--active {
       flex-basis: 100%;
     }
 
-    &:nth-child(2) picture {
+    &:nth-child(2) .advantages__image-wrapper {
       order: -1;
     }
+  }
+
+  .advantages__image-wrapper {
+    height: 256px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item {
     flex-basis: 400px;
+
+    &:first-child .advantages__heading {
+      padding-top: 53px;
+    }
 
     &--active {
       flex-basis: 100%;
