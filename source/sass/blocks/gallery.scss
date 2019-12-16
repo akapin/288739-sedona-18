@@ -122,6 +122,11 @@
     margin-top: 2px;
     margin-right: 12px;
   }
+
+  .gallery__image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {

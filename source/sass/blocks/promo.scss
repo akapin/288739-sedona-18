@@ -3,15 +3,15 @@
 
   background-color: #ddebf4;
   background-image: url("../../img/text-sedona-index.svg"),
-    url("../../img/bg-intro-triangle-mobil.svg"),
+    url("../../img/bg-intro-triangle-mobile.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
-  background-size: 282px, 331px, cover;
+  background-size: 282px, cover, cover;
   background-position: center 90px, bottom, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../../img/text-sedona-index.svg"),
-      url("../../img/bg-intro-triangle-mobil.svg"),
+      url("../../img/bg-intro-triangle-mobile.svg"),
       url("../../img/bg-back-mobile@2x.jpg");
   }
 
