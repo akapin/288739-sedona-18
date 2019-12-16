@@ -122,7 +122,13 @@
   }
 
   .advantages__image-wrapper {
+    flex-grow: 2;
     height: 256px;
+  }
+
+  .advantages__image {
+    width: 100%;
+    height: auto;
   }
 }
 

@@ -17,7 +17,7 @@
   &--active {
     padding: 45px 25px 26px;
     margin: 0;
-    width: auto;
+    width: 100%;
 
     color: #ffffff;
     background-color: $light-grey-blue;
@@ -100,8 +100,8 @@
 @media (min-width: $tablet-width) {
   .advantage-heading {
     justify-content: flex-start;
-    flex-basis: 256px;
-    padding: 45px 45px 21px;
+    width: 256px;
+    padding: 45px 33px 21px;
 
     border-bottom: 0;
   }
@@ -131,7 +131,7 @@
 
 @media (min-width: $desktop-width) {
   .advantage-heading {
-    flex-basis: 400px;
+    width: 400px;
     padding-top: 45px;
     padding-left: 55px;
     padding-right: 55px;
@@ -144,6 +144,11 @@
   .advantage-heading__title {
     padding-left: 70px;
     padding-right: 70px;
+
+    &--active {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   .advantage-heading__text {
