@@ -11,8 +11,14 @@
 }
 
 .page-main__header {
-  padding: 38px 24px 27px 24px;
+  padding: 38px 24px 27px;
   width: 100%;
+
+  &--form {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 18px;
+  }
 }
 
 .page-main__title {
@@ -39,6 +45,10 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     padding: 75px 0 69px;
+
+    &--form {
+      padding-bottom: 57px;
+    }
   }
 
   .page-main__title {
@@ -63,5 +73,9 @@
   .page-main__header {
     padding-top: 112px;
     padding-bottom: 71px;
+
+    &--form {
+      padding-bottom: 42px;
+    }
   }
 }

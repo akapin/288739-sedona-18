@@ -53,7 +53,7 @@
     </header>
 
     <main class="page-main">
-      <header class="page-main__header">
+      <header class="page-main__header page-main__header--form">
         <h1 class="page-main__title">Оставьте свой отзыв</h1>
         <p class="page-main__description">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
@@ -73,8 +73,8 @@
           >
             Представьтесь:
           </legend>
-          <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+          <ul class="feedback-form__list feedback-form__list--introduction">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="name">Имя*:</label>
               <input
                 class="feedback-form__input"
@@ -84,7 +84,7 @@
                 value="Петр"
               />
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="surname">
                 Фамилия*:
               </label>
@@ -96,7 +96,7 @@
                 value="Иванов"
               />
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--introduction">
               <label class="feedback-form__label" for="middle-name">
                 Отчество:
               </label>
@@ -110,8 +110,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">Контактная информация:</legend>
+        <fieldset class="feedback-form__group feedback-form__group--contacts">
+          <legend class="feedback-form__title feedback-form__title--contacts">
+            Контактная информация:
+          </legend>
           <ul class="feedback-form__list feedback-form__list--contacts">
             <li class="feedback-form__item feedback-form__item--contacts">
               <label
@@ -121,13 +123,18 @@
                 <span class="feedback-form__label-part">Контактный</span>
                 телефон*:
               </label>
-              <input
-                class="feedback-form__input feedback-form__input--contacts"
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Введите телефон"
-              />
+              <div class="feedback-form__input-group">
+                <input
+                  class="feedback-form__input feedback-form__input--contacts"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Введите телефон"
+                />
+                <div
+                  class="feedback-form__icon feedback-form__icon--phone"
+                ></div>
+              </div>
             </li>
             <li class="feedback-form__item feedback-form__item--contacts">
               <label
@@ -136,13 +143,18 @@
               >
                 Электронная почта*:
               </label>
-              <input
-                class="feedback-form__input feedback-form__input--contacts"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Введите e-mail"
-              />
+              <div class="feedback-form__input-group">
+                <input
+                  class="feedback-form__input feedback-form__input--contacts"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Введите e-mail"
+                />
+                <div
+                  class="feedback-form__icon feedback-form__icon--email"
+                ></div>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -150,13 +162,13 @@
           <legend class="feedback-form__title feedback-form__title--impression">
             Ваше общее впечатление:
           </legend>
-          <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+          <ul class="feedback-form__list feedback-form__list--impression">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="positive-impression"
-                name="positive-impression"
+                name="impression"
                 checked
               />
               <label
@@ -166,12 +178,12 @@
                 Скорее положительное
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="negative-impression"
-                name="negative-impression"
+                name="impression"
               />
               <label
                 class="feedback-form__label feedback-form__label--radio"
@@ -180,12 +192,12 @@
                 Скорее отрицательное
               </label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input
-                class="feedback-form__radio"
+                class="feedback-form__radio visually-hidden"
                 type="radio"
                 id="neutral-impression"
-                name="neutral-impression"
+                name="impression"
               />
               <label
                 class="feedback-form__label feedback-form__label--radio"
@@ -196,14 +208,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">
+        <fieldset class="feedback-form__group feedback-form__group--landmarks">
+          <legend class="feedback-form__title feedback-form__title--landmarks">
             Посещенные достопримечательности:
           </legend>
           <ul class="feedback-form__list feedback-form__list--landmarks">
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="devil-bridge"
                 name="devil-bridge"
@@ -218,7 +230,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="bell-mountain"
                 name="bell-mountain"
@@ -233,7 +245,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="slide-park"
                 name="slide-park"
@@ -248,7 +260,7 @@
             </li>
             <li class="feedback-form__item feedback-form__item--landmarks">
               <input
-                class="feedback-form__checkbox"
+                class="feedback-form__checkbox visually-hidden"
                 type="checkbox"
                 id="red-rocks"
                 name="red-rocks"
@@ -262,8 +274,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">
+        <fieldset class="feedback-form__group feedback-form__group--textarea">
+          <legend class="feedback-form__title feedback-form__title--textarea">
             Опишите свои эмоции:
           </legend>
           <textarea
@@ -275,7 +287,7 @@
         <button class="button button--blue feedback-form__button" type="submit">
           Отправить отзыв
         </button>
-        <p class="feedback-form__notes">* — обязательные поля</p>
+        <p class="feedback-form__notes">* – обязательные поля</p>
       </form>
     </main>
 
@@ -394,6 +406,35 @@
         </p>
       </div>
     </footer>
+
+    <section class="page-modal page-modal--success">
+      <h2 class="visually-hidden">Окно подтверждения отправки отзыва</h2>
+      <div class="page-modal__wrapper">
+        <p class="page-modal__title">Ваш отзыв отправлен!</p>
+        <p class="page-modal__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br />
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+
+      <button class="button button--blue page-modal__button" type="button">
+        Закрыть окно
+      </button>
+    </section>
+
+    <section class="page-modal page-modal--failure">
+      <h2 class="visually-hidden">Окно ошибки отправки отзыва</h2>
+      <p class="page-modal__title page-modal__title--failure">Что-то пошло не так!</p>
+      <p class="page-modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button
+        class="button button--blue page-modal__button page-modal__button--failure"
+        type="button"
+      >
+        OK
+      </button>
+    </section>
 
     <script>
       var navMain = document.querySelector(".main-nav");
