@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
     <script>
       document.createElement("picture");
     </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="index.html">
@@ -173,7 +177,7 @@
                 type="radio"
                 id="positive-impression"
                 name="impression"
-                checked
+                checked=""
               />
               <label
                 class="feedback-form__label feedback-form__label--radio"
@@ -223,7 +227,7 @@
                 type="checkbox"
                 id="devil-bridge"
                 name="devil-bridge"
-                checked
+                checked=""
               />
               <label
                 class="feedback-form__label feedback-form__label--checkbox"
@@ -238,7 +242,7 @@
                 type="checkbox"
                 id="bell-mountain"
                 name="bell-mountain"
-                checked
+                checked=""
               />
               <label
                 class="feedback-form__label feedback-form__label--checkbox"
@@ -253,7 +257,7 @@
                 type="checkbox"
                 id="slide-park"
                 name="slide-park"
-                checked
+                checked=""
               />
               <label
                 class="feedback-form__label feedback-form__label--checkbox"
@@ -303,7 +307,7 @@
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/htmlacademy_ru">
               <svg class="social__image" width="17.5" height="14.663">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
               <span class="visually-hidden">Мы в Твиттере</span>
             </a>
@@ -311,7 +315,7 @@
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
               <svg class="social__image" width="8.672" height="18.944">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
@@ -322,7 +326,7 @@
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <svg class="social__image" width="19.979" height="14.015">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
@@ -338,7 +342,7 @@
             href="https://htmlacademy.ru/intensive/adaptive"
           >
             <svg class="copyright__image" width="41" height="45">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
