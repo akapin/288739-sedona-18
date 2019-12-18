@@ -21,11 +21,9 @@
 }
 
 .copyright__image {
-  path {
-    fill: #000000;
-  }
+  fill: #000000;
 
-  &:hover path {
+  &:hover {
     fill: #81b3d2;
   }
 
