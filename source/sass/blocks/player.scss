@@ -68,14 +68,16 @@
   &--fullscreen {
     right: 8%;
   }
+}
 
-  &:hover path,
-  &:hover polygon {
+.player__icon {
+  fill: #5c6870;
+
+  &:hover {
     fill: #333333;
   }
 
-  &:active path,
-  &:active polygon {
+  &:active {
     fill: #333333;
     opacity: 0.3;
   }
@@ -105,6 +107,7 @@
 
   .player__button {
     position: static;
+    fill: #5c6870;
 
     &--subtitles {
       margin-top: 1px;
@@ -115,23 +118,20 @@
       margin-top: 1px;
       margin-right: 6px;
     }
+  }
 
-    &:hover path,
-    &:hover polygon {
+  .player__icon {
+    fill: #ffffff;
+
+    &:hover {
       fill: #ffffff;
       opacity: 0.6;
     }
 
-    &:active path,
-    &:active polygon {
+    &:active {
       fill: #ffffff;
       opacity: 0.3;
     }
-  }
-
-  .player__icon path,
-  .player__icon polygon {
-    fill: #ffffff;
   }
 
   .player__bottom-bar {
