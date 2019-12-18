@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
     <script>
       document.createElement("picture");
     </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="index.html">
@@ -129,7 +133,7 @@
               </div>
               <div class="gallery__likes">
                 <svg class="gallery__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 1350
               </div>
@@ -196,7 +200,7 @@
               </div>
               <div class="gallery__likes">
                 <svg class="gallery__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 143
               </div>
@@ -265,7 +269,7 @@
               </div>
               <div class="gallery__likes">
                 <svg class="gallery__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 96
               </div>
@@ -332,7 +336,7 @@
               </div>
               <div class="gallery__likes">
                 <svg class="gallery__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 254
               </div>
@@ -395,7 +399,7 @@
                   width="16"
                   height="20"
                 >
-                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                  <use xlink:href="#icon-video-replay"></use>
                 </svg>
                 <span class="visually-hidden">Повтор</span>
               </button>
@@ -406,7 +410,7 @@
                   width="32"
                   height="20"
                 >
-                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                  <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
                 <span class="visually-hidden">Субтитры</span>
               </button>
@@ -416,7 +420,7 @@
                   width="20"
                   height="20"
                 >
-                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                  <use xlink:href="#icon-video-fullscreen"></use>
                 </svg>
                 <span class="visually-hidden">Полный экран</span>
               </button>
@@ -435,7 +439,7 @@
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/htmlacademy_ru">
               <svg class="social__image" width="17.5" height="14.663">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
               <span class="visually-hidden">Мы в Твиттере</span>
             </a>
@@ -443,7 +447,7 @@
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
               <svg class="social__image" width="8.672" height="18.944">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
@@ -454,7 +458,7 @@
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <svg class="social__image" width="19.979" height="14.015">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
@@ -470,7 +474,7 @@
             href="https://htmlacademy.ru/intensive/adaptive"
           >
             <svg class="copyright__image" width="41" height="45">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
