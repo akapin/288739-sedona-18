@@ -107,8 +107,8 @@
   }
 
   .advantage-heading__title {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 21px;
   }
 
@@ -118,6 +118,8 @@
 
   .advantage-heading__text {
     margin-bottom: 21px;
+    padding-left: 11px;
+    padding-right: 11px;
 
     &--bridge br {
       display: none;
@@ -125,6 +127,18 @@
 
     &--road br {
       display: inline;
+    }
+
+    &--number {
+      &::before {
+        left: -2px;
+        top: 0;
+      }
+
+      &::after {
+        right: -2px;
+        top: 0;
+      }
     }
   }
 }
@@ -154,6 +168,11 @@
   .advantage-heading__text {
     &--bridge br {
       display: inline;
+    }
+
+    &--square {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
